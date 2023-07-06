@@ -1,7 +1,7 @@
 hidden = [".config", "package-lock.json"]
 
-run="pm2 start lib/runner/index.js && pm2 save && pm2 logs"
-entrypoint = "lib/runner/index.js"
+run="pm2 start lib/index.js && pm2 save && pm2 logs"
+entrypoint = "lib/index.js"
 [[hints]]
 
 regex = "Error \\[ERR_REQUIRE_ESM\\]"
@@ -105,7 +105,7 @@ environment = []
 
 pauseForSourceMap = false
 
-program = "./lib/runner/index.js"
+program = "./lib/index.js"
 
 request = "launch"
 
